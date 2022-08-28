@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style>
+#app {
+  background-color: grey;
+}
 html,
 body {
   height: 100%;

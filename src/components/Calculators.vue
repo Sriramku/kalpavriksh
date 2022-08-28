@@ -1,7 +1,10 @@
 <template>
   <div>
-    <button @click="openSimpleCalculator">Simple Calculator</button>
-    <simple-calculator :dialogOpen="dialogOpen"></simple-calculator>
+    <button @click="accessSimpleCalculator(true)">Simple Calculator</button>
+    <simple-calculator
+      :dialogOpen="dialogOpen"
+      @close-dialog="accessSimpleCalculator"
+    ></simple-calculator>
   </div>
 </template>
 
@@ -17,8 +20,8 @@ export default {
     SimpleCalculator,
   },
   methods: {
-    openSimpleCalculator() {
-      this.dialogOpen = !this.dialogOpen;
+    accessSimpleCalculator(value) {
+      this.dialogOpen = value;
     },
   },
 };

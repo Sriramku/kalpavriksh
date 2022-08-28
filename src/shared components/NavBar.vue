@@ -47,8 +47,10 @@ export default {
 <style>
 .navbar {
   background-color: #5c5252;
+  color: white;
   height: 20%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .nav-btn {
@@ -71,6 +73,7 @@ export default {
   background-color: white;
   color: black;
   cursor: pointer;
+  border-radius: 20%;
 }
 
 .default-tab {
