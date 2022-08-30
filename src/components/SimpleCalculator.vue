@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  props: ["dialogOpen"],
+  props: ["shouldOpenSimpCalc"],
   data() {
     return {
       previous: null,
@@ -57,7 +57,7 @@ export default {
   computed: {
     temp: {
       get() {
-        return this.dialogOpen;
+        return this.shouldOpenSimpCalc;
       },
       set(value) {
         this.current = "0";
